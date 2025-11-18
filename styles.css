@@ -1,0 +1,66 @@
+:root {
+  --orange: #e53f1a;
+  --blue: #1f7dbcf7;
+  --yellow: #f1c40f;
+  --purple: #8e44ad;
+  --green: #08d75e;
+  --cyan: #00ffff;
+  --peach: #e69966;
+  --teal: #1abc9c;
+  --maroon: #800000;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f0f0f0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.page {
+  width: min(92vw, 720px);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.cell {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 1;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: bold;
+  border-radius: 8px;
+  color: var(--white);
+}
+
+/* Top row */
+.cell-2 { background: var(--orange); }
+.cell-3 { background: var(--blue); }
+.cell-4 { background: var(--yellow); }
+
+/* Middle row */
+.cell-5 { background: var(--purple); }
+.cell-6 { background: var(--green); }
+.cell-1 { background: var(--cyan); color:  }
+
+/* Bottom row */
+.cell-7 { background: var(--peach); color:  }
+.cell-8 { background: var(--teal); }
+.cell-9 { background: var(--maroon); }

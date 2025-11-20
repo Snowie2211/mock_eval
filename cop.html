@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #fdf6e3; /* soft cream background */
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #d8cfc4; /* light brown border */
+      padding: 15px;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      color: #4b3f2f; /* dark brown */
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #3c2f23; /* slightly darker for price */
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #5c5045; /* muted brown */
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OSK.HEROpKDiaPXFUix9r3h5-YlXTRMUL2in_67iRfUBuOW62Sg?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.bgVnprUkFymxnyqcm9AyQgHaEO?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Americano">
+      <h3>Americano</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.HB5wGRgFD0mCFtDKUGr79gHaDt?w=303&h=175&c=7&r=0&o=7&pid=1.7&rm=3" alt="Espresso">
+      <h3>Espresso</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.-XuT8dY0p6cXFfKdpciJNAHaGE?w=158&h=150&c=6&o=7&pid=1.7&rm=3" alt="Macchiato">
+      <h3>Macchiato</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+    <div class="card">
+      <img src="data:image/webp;base64,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" alt="Mocha">
+      <h3>Mocha</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.xzR-Pqn6sRB8KD0Ja3PbRgHaEK?w=262&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Coffee Latte">
+      <h3>Coffee Latte</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+    <div class="card">
+      <img src="https://th.bing.com/th/id/OIP.9Utpt9BVwK5DgWcZU_31ZAHaEO?w=324&h=184&c=7&r=0&o=7&pid=1.7&rm=3" alt="Piccolo Latte">
+      <h3>Piccolo Latte</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+    <div class="card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.wtOwzdLivCMy4MidLO89TAHaC9?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ristretto">
+      <h3>Ristretto</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+    <div class="card">
+      <img src="https://agirlworthsaving.net/wp-content/uploads/2022/11/Affogato-Recipe-1.jpg" alt="Affogato">
+      <h3>Affogato</h3>
+      <strong>$49</strong>
+      <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+    </div>
+  </div>
+</body>
+</html>
